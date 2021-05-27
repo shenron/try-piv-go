@@ -21,7 +21,7 @@ func main() {
 		return
 	}
 	defer close()
-	slot := piv.SlotCardAuthentication
+	slot := piv.SlotAuthentication
 
 	caPriv, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
 	if err != nil {
